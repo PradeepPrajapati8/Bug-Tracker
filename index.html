@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bug Reports</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bug Reports</h1>
+    <a class="button" href="report.html">Report New Bug</a>
+  </header>
+
+  <div class="filters">
+    <select id="severityFilter">
+      <option value="All">All Severities</option>
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+    <select id="statusFilter">
+      <option value="All">All Statuses</option>
+      <option>Open</option>
+      <option>In Progress</option>
+      <option>Resolved</option>
+    </select>
+  </div>
+
+  <ul id="bugList"></ul>
+  <h3>Open Bugs</h3>
+  <ul id="openBugList"></ul>
+
+  <h3>Resolved Bugs</h3>
+  <ul id="resolvedBugList"></ul>
+
+
+  <script src="scripts.js"></script>
+</body>
+</html>
